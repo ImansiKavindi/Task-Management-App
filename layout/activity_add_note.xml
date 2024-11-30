@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:fontFamily="sans-serif"
+        android:text="Add Task"
+        android:textColor="#2979FF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/addNoteHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/baseline_beenhere_24" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/addNoteHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="sans-serif"
+        android:hint="Enter the title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/prioritySpinner"
+        android:textSize="20sp"
+        android:background="@drawable/orange_border"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="395dp"
+        android:layout_height="466dp"
+        android:layout_below="@id/prioritySpinner"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="serif"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
